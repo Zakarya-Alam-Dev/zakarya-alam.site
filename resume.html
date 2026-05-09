@@ -77,7 +77,27 @@ body{
     color:#00d4ff;
     font-weight:600;
 }
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
 
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* SCROLL ANIMATION */
+.animate{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.7s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
 </style>
 </head>
 
@@ -86,15 +106,15 @@ body{
 <div class="container">
 
     <!-- HEADER -->
-    <div class="header">
-        <h1>Zakaria Alam</h1>
-        <p>Frontend Developer | Digital Skills | Creative Learner</p>
+    <div class="header animate">
+        <h1 class="animate">My Resume</h1>
+      <p class="animate">Frontend Developer | Digital Skills | Creative Learner</p>
     </div>
 
     <!-- GRID -->
     <div class="grid">
 
-        <div class="card">
+        <div class="card animate">
             <h2>💻 Frontend Development</h2>
             <p>I build responsive and modern websites using 
             <span class="highlight">HTML</span>, 
@@ -102,17 +122,17 @@ body{
             and <span class="highlight">JavaScript</span>.</p>
         </div>
 
-        <div class="card">
+      <div class="card animate">
             <h2>📱 Responsive Design</h2>
             <p>Websites that work perfectly on mobile, tablet, and desktop with smooth layouts.</p>
         </div>
 
-        <div class="card">
+       <div class="card animate">
             <h2>🎨 UI Design</h2>
             <p>Clean and modern interface design with user-friendly experience.</p>
         </div>
 
-        <div class="card">
+        <div class="card animate">
             <h2>📊 MS Office</h2>
             <p>Skilled in 
             <span class="highlight">Word</span>, 
@@ -120,24 +140,24 @@ body{
             and <span class="highlight">PowerPoint</span> for professional work.</p>
         </div>
 
-        <div class="card">
+        <div class="card animate">
             <h2>🛒 Amazon Marketing</h2>
             <p>Basic knowledge of product listing and online marketing on Amazon.</p>
         </div>
 
-        <div class="card">
+        <div class="card animate">
             <h2>📢 Social Media Ads</h2>
             <p>Experience in running ads on 
             <span class="highlight">Facebook</span> and 
             <span class="highlight">Instagram</span>.</p>
         </div>
 
-        <div class="card">
+        <div class="card animate">
             <h2>📚 Education</h2>
             <p>Al-Madina Model School & College Swat (Class 9 Completed).</p>
         </div>
 
-        <div class="card">
+        <div class="card animate">
             <h2>🚀 Goal</h2>
             <p>Becoming a professional freelance frontend developer and working globally.</p>
         </div>
@@ -145,6 +165,22 @@ body{
     </div>
 
 </div>
+<script>
+const elements = document.querySelectorAll(".animate");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
