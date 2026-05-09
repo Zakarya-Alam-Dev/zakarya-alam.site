@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Zakaria Alam Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color:white;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:50px auto;
+    padding:20px;
+}
+
+/* HEADER */
+.header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.header h1{
+    font-size:40px;
+    letter-spacing:2px;
+}
+
+.header p{
+    color:#ccc;
+    margin-top:10px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,0.08);
+}
+
+/* TITLES */
+.card h2{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+/* TEXT */
+.card p{
+    font-size:14px;
+    line-height:1.6;
+    color:#ddd;
+}
+
+/* HIGHLIGHT */
+.highlight{
+    color:#00d4ff;
+    font-weight:600;
+}
+/* SCROLL ANIMATION */
+.animate{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.7s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header animate">
+        <h1>Zakaria Alam</h1>
+        <p>Frontend Developer | Digital Skills | Creative Learner</p>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid">
+
+        <div class="card animate">
+            <h2>💻 Frontend Development</h2>
+            <p>I build responsive and modern websites using 
+            <span class="highlight">HTML</span>, 
+            <span class="highlight">CSS</span>, 
+            and <span class="highlight">JavaScript</span>.</p>
+        </div>
+
+        <div class="card animate">
+            <h2>📱 Responsive Design</h2>
+            <p>Websites that work perfectly on mobile, tablet, and desktop with smooth layouts.</p>
+        </div>
+
+        <div class="card animate">
+            <h2>🎨 UI Design</h2>
+            <p>Clean and modern interface design with user-friendly experience.</p>
+        </div>
+
+        <div class="card animate">
+            <h2>📊 MS Office</h2>
+            <p>Skilled in 
+            <span class="highlight">Word</span>, 
+            <span class="highlight">Excel</span>, 
+            and <span class="highlight">PowerPoint</span> for professional work.</p>
+        </div>
+
+        <div class="card animate">
+            <h2>🛒 Amazon Marketing</h2>
+            <p>Basic knowledge of product listing and online marketing on Amazon.</p>
+        </div>
+
+        <div class="card animate">
+            <h2>📢 Social Media Ads</h2>
+            <p>Experience in running ads on 
+            <span class="highlight">Facebook</span> and 
+            <span class="highlight">Instagram</span>.</p>
+        </div>
+
+        <div class="card animate">
+            <h2>📚 Education</h2>
+            <p>Al-Madina Model School & College Swat (Class 9 Completed).</p>
+        </div>
+
+        <div class="card animate">
+            <h2>🚀 Goal</h2>
+            <p>Becoming a professional freelance frontend developer and working globally.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+const elements = document.querySelectorAll(".animate");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

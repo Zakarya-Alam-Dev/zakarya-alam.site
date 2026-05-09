@@ -1,0 +1,616 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zakaria Alam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- PRELOADER -->
+<div id="preloader">
+    
+    <div class="ring"></div>
+
+    <div class="loader-content">
+        <h1 class="name">ZAKARIA</h1>
+
+        <h2 class="sub-name">
+            <span>A</span>
+            <span>L</span>
+            <span>A</span>
+            <span>M</span>
+        </h2>
+
+        <p class="loading-text">LOADING...</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="logo">
+        <span class="z-red">Z</span><span class="z-light">akaria</span>
+        <span class="a-blue">A</span><span class="a-light">lam</span>
+    </div>
+
+    <ul class="menu">
+        <li><a href="#" class="nav-link active" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" class="nav-link" onclick="showSection('about')">About</a></li>
+        <li><a href="#" class="nav-link" onclick="showSection('services')">Services</a></li>
+        <li><a href="#" class="nav-link" onclick="showSection('portfolio')">Portfolio</a></li>
+        <li><a href="javascript:void(0)" class="nav-link contact-link" onclick="openConnect()">Contact</a></li>
+    </ul>
+
+    <button class="connect-btn" onclick="openConnect()">Connect With Me</button>
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="page-section">
+    <section class="hero">
+        <img src="profile.jpg"<img src="profile.jpg" class="profile-img">
+
+
+
+
+
+    </section>
+
+    <p class="intro-text">
+        I’m <span class="z-red">Z</span><span class="z-light">akaria</span>
+        <span class="a-blue">A</span><span class="a-light">lam</span>, frontend developer,
+        <br> based in Pakistan.
+    </p>
+
+    <p class="detail-text">
+        I’m a Frontend Developer from Pakistan with experience building responsive and dynamic web apps using
+        <span class="tech-blue">HTML</span>,
+        <span class="tech-blue">CSS</span>,
+        <span class="tech-blue">JavaScript</span>.
+        <br>
+        I’m also learning backend technologies like Node.js and MongoDB.
+    </p>
+
+    <div class="button-group">
+        <button class="action-btn" onclick="openConnect()">Connect With Me</button>
+<a href="resume.html" class="action-btn">
+  My Resume
+</a>
+
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="page-section">
+
+    <h1 class="about-title-center">About Me</h1>
+
+    <div class="about-content">
+
+        <div class="circle-logo">
+            <img src="profile.jpg" class="profile-img">
+
+
+
+        </div>
+
+        <div class="about-text">
+            <h2 class="about-name">Zakaria Alam</h2>
+
+            <p>Hello! I’m Zakaria Alam, a passionate frontend developer from Pakistan.</p>
+            <p>
+I have experience building responsive and interactive web applications using 
+<span class="tech-highlight">HTML</span>, 
+<span class="tech-highlight">CSS</span>, 
+and <span class="tech-highlight">JavaScript</span>.
+</p>
+
+            <p>Currently exploring backend technologies like Node.js and MongoDB.</p>
+            <p>I enjoy creating modern UI and learning new technologies.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="page-section">
+
+    <h1 class="about-title-center">My Services</h1>
+
+    <div class="services-container">
+
+        <div class="service-box">
+            <h2>Web Design</h2>
+            <p>I create modern and responsive website designs using HTML, CSS and UI principles.</p>
+        </div>
+
+        <div class="service-box">
+            <h2>Frontend Development</h2>
+            <p>I build interactive and dynamic websites using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="service-box">
+            <h2>Responsive Design</h2>
+            <p>All websites I create work perfectly on mobile, tablet, and desktop screens.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio" class="page-section">
+
+    <h1 class="about-title-center">My Portfolio</h1>
+
+    <div class="portfolio-container">
+
+        <div class="portfolio-card"><h2>Frontend Developer</h2><p>I build modern responsive websites using HTML, CSS, and JavaScript.</p></div>
+        <div class="portfolio-card"><h2>Education</h2><p>Al-Madina Model School & College Amankot Swat, Class 9th completed.</p></div>
+        <div class="portfolio-card"><h2>MS Office</h2><p>Skilled in Word, Excel, and PowerPoint for professional documentation.</p></div>
+        <div class="portfolio-card"><h2>Amazon Marketing</h2><p>Basic knowledge of Amazon online marketing and product listing.</p></div>
+        <div class="portfolio-card"><h2>Social Media Ads</h2><p>Experience with Facebook and Instagram ad campaigns.</p></div>
+        <div class="portfolio-card"><h2>Web Projects</h2><p>Created personal portfolio, landing pages, and UI practice projects.</p></div>
+        <div class="portfolio-card"><h2>UI Design</h2><p>Basic UI/UX design skills for modern website layouts.</p></div>
+        <div class="portfolio-card"><h2>Freelancing Goal</h2><p>Working towards becoming a professional freelance frontend developer.</p></div>
+
+    </div>
+
+<div class="portfolio-buttons">
+    <button class="action-btn" onclick="openConnect()">Connect With Me</button>
+<a href="resume.html" class="action-btn">
+  My Resume
+</a>
+
+
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="logo-row">
+        <div class="logo-circle">
+           <img src="profile.jpg" class="profile-img">
+
+
+        </div>
+        <span class="logo-name">Zakaria Alam</span>
+    </div>
+
+    <p class="footer-text">Let's Connect</p>
+
+    <p class="footer-subtext">
+        I’m always open to collaboration or discussing new projects.
+        Reach out via my social links or email!
+    </p>
+
+    <div class="social-row">
+        <a href="https://github.com" class="social-circle" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com" class="social-circle" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" class="social-circle" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <p class="footer-copy">© 2026 Zakaria Alam. All rights reserved.</p>
+</footer>
+
+<!-- ================= CONTACT POPUP ================= -->
+<div id="connectPage" class="connect-page">
+    <div class="connect-content">
+        <span class="back-btn" onclick="closeConnect()">←</span>
+
+
+        <h2 class="contact-title">
+            <span class="blue-text">Contact</span>
+            <span class="red-text">Me</span>
+        </h2>
+
+        <!-- ✅ ONLY CHANGE -->
+        <form id="contactForm">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit" class="send-btn">Send Message</button>
+
+</form>
+
+
+    </div>
+</div>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+function showSection(id) {
+    document.querySelectorAll(".page-section").forEach(sec => {
+        sec.style.display = "none";
+    });
+    document.getElementById(id).style.display = "block";
+
+    document.querySelectorAll(".nav-link").forEach(l => l.classList.remove("active"));
+}
+
+function openConnect() {
+    document.getElementById("connectPage").style.display = "flex";
+}
+
+function closeConnect() {
+    document.getElementById("connectPage").style.display = "none";
+}
+
+// default
+showSection("home");
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        const preloader = document.getElementById("preloader");
+        if (preloader) {
+            preloader.style.opacity = "0";
+            preloader.style.transition = "0.5s";
+            setTimeout(function(){
+                preloader.style.display = "none";
+            }, 500);
+        }
+    }, 2000); 
+});
+</script>
+
+
+
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zakaria Alam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- PRELOADER -->
+<div id="preloader">
+    
+    <div class="ring"></div>
+
+    <div class="loader-content">
+        <h1 class="name">ZAKARIA</h1>
+
+        <h2 class="sub-name">
+            <span>A</span>
+            <span>L</span>
+            <span>A</span>
+            <span>M</span>
+        </h2>
+
+        <p class="loading-text">LOADING...</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- ================= HEADER ================= -->
+<header class="header animate">
+    <div class="logo">
+        <span class="z-red">Z</span><span class="z-light">akaria</span>
+        <span class="a-blue">A</span><span class="a-light">lam</span>
+    </div>
+
+    <ul class="menu">
+        <li><a href="#" class="nav-link active" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" class="nav-link" onclick="showSection('about')">About</a></li>
+        <li><a href="#" class="nav-link" onclick="showSection('services')">Services</a></li>
+        <li><a href="#" class="nav-link" onclick="showSection('portfolio')">Portfolio</a></li>
+        <li><a href="javascript:void(0)" class="nav-link contact-link" onclick="openConnect()">Contact</a></li>
+    </ul>
+
+    <button class="connect-btn" onclick="openConnect()">Connect With Me</button>
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="page-section">
+    <section class="hero">
+        <img src="Assets/profile.jpg" class="profile-img animate">
+
+
+    </section>
+
+    <p class="intro-text animate">
+    I’m <span class="z-red">Z</span><span class="z-light">akaria</span>
+    <span class="a-blue">A</span><span class="a-light">lam</span>, frontend developer,
+    <br> based in Pakistan.
+</p>
+
+    <p class="detail-text animate">
+        I’m a Frontend Developer from Pakistan with experience building responsive and dynamic web apps using
+        <span class="tech-blue">HTML</span>,
+        <span class="tech-blue">CSS</span>,
+        <span class="tech-blue">JavaScript</span>.
+        <br>
+        I’m also learning backend technologies like Node.js and MongoDB.
+    </p>
+
+    <div class="button-group animate">
+        <button class="action-btn" onclick="openConnect()">Connect With Me</button>
+<a href="portfolio/resume.html" class="action-btn">
+  My Resume
+</a>
+
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="page-section">
+
+    <h1 class="about-title-center animate">About Me</h1>
+
+    <div class="about-content">
+
+        <div class="circle-logo">
+            <img src="Assets/profile.jpg" class="profile-img">
+
+
+        </div>
+
+        <div class="about-text animate">
+            <h2 class="about-name">Zakaria Alam</h2>
+
+            <p>Hello! I’m Zakaria Alam, a passionate frontend developer from Pakistan.</p>
+            <p>
+         I have experience building responsive and interactive web applications using 
+         <span class="tech-highlight">HTML</span>, 
+         <span class="tech-highlight">CSS</span>, 
+         and <span class="tech-highlight">JavaScript</span>.
+           </p>
+
+            <p>Currently exploring backend technologies like Node.js and MongoDB.</p>
+            <p>I enjoy creating modern UI and learning new technologies.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="page-section">
+
+    <div class="services-container">
+
+        <div class="service-box animate">
+            <h2>Web Design</h2>
+            <p>I create modern and responsive website designs using HTML, CSS and UI principles.</p>
+        </div>
+
+        <div class="service-box animate">
+            <h2>Frontend Development</h2>
+            <p>I build interactive and dynamic websites using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="service-box animate">
+            <h2>Responsive Design</h2>
+            <p>All websites I create work perfectly on mobile, tablet, and desktop screens.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio" class="page-section">
+
+   <h1 class="about-title-center animate">My Portfolio</h1>
+
+    <div class="portfolio-container">
+
+        <div class="portfolio-card animate"><h2>Frontend Developer</h2><p>I build modern responsive websites using HTML, CSS, and JavaScript.</p></div>
+        <div class="portfolio-card animate"><h2>Education</h2><p>Al-Madina Model School & College Amankot Swat, Class 9th completed.</p></div>
+        <div class="portfolio-card animate"><h2>MS Office</h2><p>Skilled in Word, Excel, and PowerPoint for professional documentation.</p></div>
+        <div class="portfolio-card animate"><h2>Amazon Marketing</h2><p>Basic knowledge of Amazon online marketing and product listing.</p></div>
+        <div class="portfolio-card animate"><h2>Social Media Ads</h2><p>Experience with Facebook and Instagram ad campaigns.</p></div>
+        <div class="portfolio-card animate"><h2>Web Projects</h2><p>Created personal portfolio, landing pages, and UI practice projects.</p></div>
+        <div class="portfolio-card animate"><h2>UI Design</h2><p>Basic UI/UX design skills for modern website layouts.</p></div>
+        <div class="portfolio-card animate"><h2>Freelancing Goal</h2><p>Working towards becoming a professional freelance frontend developer.</p></div>
+
+    </div>
+
+<div class="portfolio-buttons">
+    <button class="action-btn" onclick="openConnect()">Connect With Me</button>
+  <a href="portfolio/resume.html" class="action-btn">
+  My Resume
+</a>
+
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer animate">
+    <div class="logo-row">
+        <div class="logo-circle">
+            <img src="Assets/profile.jpg" class="profile-img">
+
+
+        </div>
+        <span class="logo-name">Zakaria Alam</span>
+    </div>
+
+    <p class="footer-text">Let's Connect</p>
+
+    <p class="footer-subtext">
+        I’m always open to collaboration or discussing new projects.
+        Reach out via my social links or email!
+    </p>
+
+    <div class="social-row">
+        <a href="https://github.com" class="social-circle" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com" class="social-circle" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" class="social-circle" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <p class="footer-copy">© 2026 Zakaria Alam. All rights reserved.</p>
+</footer>
+
+<!-- ================= CONTACT POPUP ================= -->
+<div id="connectPage" class="connect-page">
+    <div class="connect-content animate">
+        <span class="back-btn" onclick="closeConnect()">←</span>
+
+
+         <h2 class="contact-title animate">
+            <span class="blue-text">Contact</span>
+            <span class="red-text">Me</span>
+        </h2>
+
+        <!-- ✅ ONLY CHANGE -->
+        <form id="contactForm" class="animate">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit" class="send-btn">Send Message</button>
+
+</form>
+
+
+    </div>
+</div>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+function showSection(id) {
+    document.querySelectorAll(".page-section").forEach(sec => {
+        sec.style.display = "none";
+    });
+    document.getElementById(id).style.display = "block";
+
+    document.querySelectorAll(".nav-link").forEach(l => l.classList.remove("active"));
+}
+
+function openConnect() {
+    document.getElementById("connectPage").style.display = "flex";
+}
+
+function closeConnect() {
+    document.getElementById("connectPage").style.display = "none";
+}
+
+// default
+showSection("home");
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        const preloader = document.getElementById("preloader");
+        if (preloader) {
+            preloader.style.opacity = "0";
+            preloader.style.transition = "0.5s";
+            setTimeout(function(){
+                preloader.style.display = "none";
+            }, 500);
+        }
+    }, 2000); 
+});
+</script>
+
+<script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        const elements = document.querySelectorAll(".animate");
+
+        elements.forEach((el, i) => {
+            setTimeout(() => {
+                el.classList.add("show");
+            }, i * 120); // smooth delay
+        });
+
+    }, 1000); // fast start (0.4 sec)
+});
+</script>
+<script>
+window.addEventListener("load", function () {
+
+    setTimeout(function () {
+        const img = document.querySelector(".img-animate");
+        if (img) {
+            img.classList.add("img-show");
+        }
+    }, 1000); // fast and smooth
+
+});
+</script>
+<script>
+let isScrolling;
+
+window.addEventListener("scroll", function () {
+
+    document.querySelectorAll(".scroll-anim").forEach(el => {
+        el.classList.add("scroll-hide");
+    });
+
+    clearTimeout(isScrolling);
+
+    isScrolling = setTimeout(() => {
+        document.querySelectorAll(".scroll-anim").forEach(el => {
+            el.classList.remove("scroll-hide");
+        });
+    }, 200); // 0.2 sec
+});
+</script>
+
+<script>
+const elements = document.querySelectorAll(".animate");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show"); 
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+
+
+
+</body>
+</html>
+>>>>>>> 5d2a301 (first upload)
