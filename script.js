@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 document.addEventListener("DOMContentLoaded", () => {
 
     /* NAV ACTIVE STATE */
@@ -226,7 +226,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
         }
     );
 });
-=======
+
 document.addEventListener("DOMContentLoaded", () => {
 
     /* NAV ACTIVE STATE */
@@ -454,24 +454,4 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
         }
     );
 });
-<script>
-const elements = document.querySelectorAll(".animate");
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-
-            // slight delay for premium feel
-            setTimeout(() => {
-                entry.target.classList.add("show");
-            }, 100);
-
-        }
-    });
-}, {
-    threshold: 0.2
-});
-
-elements.forEach(el => observer.observe(el));
-</script>
->>>>>>> 5d2a301 (first upload)
