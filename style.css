@@ -1413,6 +1413,22 @@ body{
     transition: 0.3s;
 }
 
+.back-btn:hover {
+    color: #00d4ff;
+    transform: translateX(-3px);
+}
+/* hidden state (jab screen se bahar ho) */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+/* visible state (jab screen me aaye) */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
