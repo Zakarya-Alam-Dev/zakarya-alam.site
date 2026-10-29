@@ -1585,6 +1585,16 @@ img.profile-img {
     }
 }
 
+.footer .logo-circle img.profile-img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
 
 
 
